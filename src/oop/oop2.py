@@ -8,8 +8,8 @@ class GroundVehicle():
         self.num_wheels = num_wheels
 
     # TODO
-    @classmethod
-    def drive(cls):
+    @staticmethod
+    def drive():
         return "vroooom"
 
 
@@ -17,8 +17,8 @@ class Motorcycle(GroundVehicle):
     def __init__(self, num_wheels=2):
         super().__init__(num_wheels)
 
-    @classmethod
-    def drive(cls):
+    @staticmethod
+    def drive():
         return "BRAAAP!!"
 
 
